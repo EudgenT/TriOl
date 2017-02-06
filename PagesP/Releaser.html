@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>CTO "TriOl"</title>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	  <link rel="stylesheet" media="all" type="text/css" href="../style.css" />
+  </head>
+  <body style="background-image: url(../9.jpg);  background-repeat:repeat;" vlink="#d0cecf" link="#d0cecf" alink="#d0cecf">
+	<div style="margin:auto; padding-bottom:5pt;">
+		<div id="LogoB" style="clear:both; background-image: url(../logo-fon3.1.1.jpg); background-repeat: no-repeat;">
+			<br>
+			
+			<!--Всплывающее окно для заявок (запчасти)-->
+			<a href="#x" class="overlay" id="win2"></a>
+			<div class="popup1">
+				<form action="order.php" method="get">
+					<center>
+						<h2>Заявка на запчасти</h2><br>
+						<div style="float: left; width: 250px;">					
+							<h2>Автомобиль</h2><br>
+							<p class="Op" style="color: #000;">Марка:</p>
+							<input type="text" class="search" name="MachineBrand" style="height:22px;" onKeyPress="ControlT()"/>
+							<p class="Op" style="color: #000;">Модель:</p>
+							<input type="text" class="search" name="СarModel" style="height:22px;" onKeyPress="ControlT()"/>
+						</div>
+						<div style="float: left; width: 250px; position: relative; top: 8px;">
+							<br><br><p class="Op" style="color: #000;">Запчасти:</p>
+							<textarea style="height:65px;" name="comment" cols="35" class="search" rows="10"></textarea>
+						</div>
+						<div style="float: left; width: 250px;">
+							<h2>Контактные данные</h2><br> 	
+							<p class="Op" style="color: #000;">Фамилия:</p>
+							<input type="text" class="search" name="FamilyNameO" style="height:22px;" onKeyPress="ControlT()"/>
+							<p class="Op" style="color: #000;">Имя:</p>
+							<input type="text" class="search" name="nameO" style="height:22px;" onKeyPress="ControlT()"/>
+							<p class="Op" style="color: #000;">Номер телефона:</p>
+							<input type="text" class="search" name="PhoneNumber" style="height:22px;" onKeyPress="ControlT()"/>
+							<p class="Op" style="color: #000;">Email:</p>
+							<input type="email" class="search" name="emailO" style="height:22px;" onKeyPress="ControlT()"/>
+						</div>
+					</center>
+					<div style="float: right; position: relative; top: 15px; padding-right:18px;">
+						<input type="submit" class="button" value="Отправить заявку"><br><br>
+					</div>
+					<a class="close"title="Закрыть" href="#close"></a>
+				</form>
+			</div>
+			
+			<!--Всплывающее окно для заявок (ремонт)-->
+			<a href="#x" class="overlay" id="win3"></a>
+			<div class="popup1">
+				<form action="order.php" method="get">
+					<center>
+						<h2>Заявка на ремонт</h2><br>
+						<div style="float: left; width: 250px;">					
+							<h2>Автомобиль</h2><br>
+							<p class="Op" style="color: #000;">Марка:</p>
+							<input type="text" class="search" name="MachineBrand" style="height:22px;" onKeyPress="ControlT()"/>
+							<p class="Op" style="color: #000;">Модель:</p>
+							<input type="text" class="search" name="СarModel" style="height:22px;" onKeyPress="ControlT()"/>
+						</div>
+						<div style="float: left; width: 250px; position: relative; top: 8px;">
+							<br><br><p class="Op" style="color: #000;">Проблема:</p>
+							<textarea style="height:65px;" name="comment" cols="35" class="search" rows="10"></textarea>
+						</div>
+						<div style="float: left; width: 250px;">
+							<h2>Контактные данные</h2><br> 	
+							<p class="Op" style="color: #000;">Фамилия:</p>
+							<input type="text" class="search" name="FamilyNameO" style="height:22px;" onKeyPress="ControlT()"/>
+							<p class="Op" style="color: #000;">Имя:</p>
+							<input type="text" class="search" name="nameO" style="height:22px;" onKeyPress="ControlT()"/>
+							<p class="Op" style="color: #000;">Номер телефона:</p>
+							<input type="text" class="search" name="PhoneNumber" style="height:22px;" onKeyPress="ControlT()"/>
+							<p class="Op" style="color: #000;">Email:</p>
+							<input type="email" class="search" name="emailO" style="height:22px;" onKeyPress="ControlT()"/>
+						</div>
+					</center>
+					<div style="float: right; position: relative; top: 15px; padding-right:18px;">
+						<input type="submit" class="button" value="Отправить заявку"><br><br>
+					</div>
+				</form>
+				<a class="close"title="Закрыть" href="#close"></a>
+			</div>
+		</div>
+		
+		<!--Меню-->
+		<div id="idMenu">
+				<ul id="menu">
+					<li style="width: 16.6%"><a href="../index.html">Главная</a></li>
+					<li style="width: 16.6%"><a href="../Works.html">Услуги</a></li>
+					<li style="width: 16.6%"><a href="../NParts.html" >Запчасти</a></li>
+					<li style="width: 16.6%"><a href="#">Подать заявку</a>
+						<ul>
+							<li><a href="#win2">Запчасти</a></li>
+							<li><a href="#win3">Ремонт</a></li>
+						</ul>
+					</li>
+					<li style="width: 16.6%"><a href="../Contacts.html">Контакты</a></li>
+					<li style="width: 16.9%"><a href="../Map.html">Карта сайта</a></li>
+				</ul>
+		</div><br>
+			
+		<div style="padding: 10px; margin:15pt; clear:both;">
+			<h1 style="text-align: center; font-size: 18pt;" class="Op">Выжимной подшипник</h1>
+			<div style="padding: 10px; margin:15pt; float: right;">
+				<img src="Releaser.jpg" align="left" style="margin-right:15pt;" >
+				<h3 class="Op" style="margin-top: 20px;">Оплата наличными при получении товара.</h3><br>
+				<h3 class="Op" style="text-indent: 25px;">Варианты доставки:</h3>
+				<ul class="Op"  style="position: relative; left: 25px;">
+					<li>Самовывоз в Днепропетровске: сегодня;</li>
+					<li>На склад "Новой Почты" по Украине: 1-2 дня.</li>
+				</ul><br>
+				<p class="Op" style="text-indent: 25px; margin-top: 10px;">Внимание!!! Наличие запчастей для Вашего авто на складе и их цены можно  
+				уточнить с помощью контактных номеров +38(067)566-41-36, +38(067)566-42-65, +38(056)721-05-34.</p>
+			</div>
+			<div style="margin-left:25%; clear: both;">
+				<table style="border: 4px solid white; text-align: center;" width="650" height="100" class="Op" cellspacing="10">
+					<tr>
+						<td colspan="2">В продаже:</td>
+					</tr>
+					<tr>
+						<td>Модель:</td>
+						<td>Производитель:</td>
+					</tr>
+					<tr>
+						<td>21 (2.0)</td>
+						<td>SNR</td>
+					</tr>
+					<tr>
+						<td>19</td>
+						<td>SNR</td>
+					</tr>
+					<tr>
+						<td>Logan</td>
+						<td>ASAM 30174</td>
+					</tr>
+				</table>
+			</div>
+			<div style="clear:both; padding-top: 15pt; margin-right:15pt;">
+				<div style="float: left; width: 300px;">
+					<a href="../NParts_2.html" class="button" tabindex="0" align="rignt" style="padding-right: 10px; margin-right:15pt;">Назад</a>
+				</div>
+				<div style="float: right;">
+					<a href="#win2" class="button" tabindex="0" align="rignt">Заказать запчасть</a>
+				</div>
+			</div>
+		</div>
+		
+		<div style="height: 93px; color: #d0cecf;  padding:5pt; padding-top: 0pt; clear: both;">
+			<br><div style="width: 47%; float:left; font-size:12 pt;">
+				<ul style="position: relative; left:35px; top: 3px;">
+					<li type="none">Контакты
+						<ul>
+							<li>+38(067)566-41-36</li>
+							<li>+38(067)566-42-65</li>
+							<li>+38(056)721-05-34</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div style="float: left;">
+				<p style="font-size:10pt; position: relative; top:80px;">©Тригуб Евгений</p>
+			</div>
+			<div style="position: relative; top: -3px; float: right;  width:250px; text-align: center; padding-top: 18pt;">
+				<ul type="none" class="Op" style="text-align:center; font-size:13pt;">
+					<li>Украина</li>
+					<li>г. Днепропетровск</li>
+					<li>ул. Балхашская, 35</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

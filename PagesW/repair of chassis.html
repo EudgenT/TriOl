@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>CTO "TriOl"</title>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	  <link rel="stylesheet" media="all" type="text/css" href="../style.css" />
+  </head>
+  <body style="background-image: url(../9.jpg);  background-repeat:repeat;" vlink="#d0cecf" link="#d0cecf" alink="#d0cecf">
+	<div style="margin:auto; padding-bottom:5pt;">
+		<div id="LogoB" style="clear:both; background-image: url(../logo-fon3.1.1.jpg); background-repeat: no-repeat;">
+			<br>
+			
+			<!--Всплывающее окно для заявок (запчасти)-->
+			<a href="#x" class="overlay" id="win2"></a>
+			<div class="popup1">
+				<form action="order.php" method="get">
+					<center>
+						<h2>Заявка на запчасти</h2><br>
+						<div style="float: left; width: 250px;">					
+							<h2>Автомобиль</h2><br>
+							<p class="Op" style="color: #000;">Марка:</p>
+							<input type="text" class="search" name="MachineBrand" style="height:22px;" onKeyPress="ControlT()"/>
+							<p class="Op" style="color: #000;">Модель:</p>
+							<input type="text" class="search" name="СarModel" style="height:22px;" onKeyPress="ControlT()"/>
+						</div>
+						<div style="float: left; width: 250px; position: relative; top: 8px;">
+							<br><br><p class="Op" style="color: #000;">Запчасти:</p>
+							<textarea style="height:65px;" name="comment" cols="35" class="search" rows="10"></textarea>
+						</div>
+						<div style="float: left; width: 250px;">
+							<h2>Контактные данные</h2><br> 	
+							<p class="Op" style="color: #000;">Фамилия:</p>
+							<input type="text" class="search" name="FamilyNameO" style="height:22px;" onKeyPress="ControlT()"/>
+							<p class="Op" style="color: #000;">Имя:</p>
+							<input type="text" class="search" name="nameO" style="height:22px;" onKeyPress="ControlT()"/>
+							<p class="Op" style="color: #000;">Номер телефона:</p>
+							<input type="text" class="search" name="PhoneNumber" style="height:22px;" onKeyPress="ControlT()"/>
+							<p class="Op" style="color: #000;">Email:</p>
+							<input type="email" class="search" name="emailO" style="height:22px;" onKeyPress="ControlT()"/>
+						</div>
+					</center>
+					<div style="float: right; position: relative; top: 15px; padding-right:18px;">
+						<input type="submit" class="button" value="Отправить заявку"><br><br>
+					</div>
+					<a class="close"title="Закрыть" href="#close"></a>
+				</form>
+			</div>
+			
+			<!--Всплывающее окно для заявок (ремонт)-->
+			<a href="#x" class="overlay" id="win3"></a>
+			<div class="popup1">
+				<form action="order.php" method="get">
+					<center>
+						<h2>Заявка на ремонт</h2><br>
+						<div style="float: left; width: 250px;">					
+							<h2>Автомобиль</h2><br>
+							<p class="Op" style="color: #000;">Марка:</p>
+							<input type="text" class="search" name="MachineBrand" style="height:22px;" onKeyPress="ControlT()"/>
+							<p class="Op" style="color: #000;">Модель:</p>
+							<input type="text" class="search" name="СarModel" style="height:22px;" onKeyPress="ControlT()"/>
+						</div>
+						<div style="float: left; width: 250px; position: relative; top: 8px;">
+							<br><br><p class="Op" style="color: #000;">Проблема:</p>
+							<textarea style="height:65px;" name="comment" cols="35" class="search" rows="10"></textarea>
+						</div>
+						<div style="float: left; width: 250px;">
+							<h2>Контактные данные</h2><br> 	
+							<p class="Op" style="color: #000;">Фамилия:</p>
+							<input type="text" class="search" name="FamilyNameO" style="height:22px;" onKeyPress="ControlT()"/>
+							<p class="Op" style="color: #000;">Имя:</p>
+							<input type="text" class="search" name="nameO" style="height:22px;" onKeyPress="ControlT()"/>
+							<p class="Op" style="color: #000;">Номер телефона:</p>
+							<input type="text" class="search" name="PhoneNumber" style="height:22px;" onKeyPress="ControlT()"/>
+							<p class="Op" style="color: #000;">Email:</p>
+							<input type="email" class="search" name="emailO" style="height:22px;" onKeyPress="ControlT()"/>
+						</div>
+					</center>
+					<div style="float: right; position: relative; top: 15px; padding-right:18px;">
+						<input type="submit" class="button" value="Отправить заявку"><br><br>
+					</div>
+				</form>
+				<a class="close"title="Закрыть" href="#close"></a>
+			</div>
+		</div>
+		
+		<!--Меню-->
+		<div id="idMenu">
+				<ul id="menu">
+					<li style="width: 16.6%"><a href="../index.html">Главная</a></li>
+					<li style="width: 16.6%"><a href="../Works.html">Услуги</a></li>
+					<li style="width: 16.6%"><a href="../NParts.html" >Запчасти</a></li>
+					<li style="width: 16.6%"><a href="#">Подать заявку</a>
+						<ul>
+							<li><a href="#win2">Запчасти</a></li>
+							<li><a href="#win3">Ремонт</a></li>
+						</ul>
+					</li>
+					<li style="width: 16.6%"><a href="../Contacts.html">Контакты</a></li>
+					<li style="width: 16.9%"><a href="../Map.html">Карта сайта</a></li>
+				</ul>
+		</div><br>
+			
+		<div style="padding: 10px; margin:15pt; clear:both;">
+			<h1 style="text-align: center; font-size: 18pt;" class="Op">Ремонт ходовой</h1>
+			<div style="padding: 10px; margin:15pt; float: right;">
+				<img src="repair of chassis.jpeg" align="right" style="padding-left: 10px; margin-left:15pt;" >
+				<p class="Op" style="text-indent: 25px;">Дороги Украины нельзя назвать качественными (а в некоторых случаях их вообще нельзя назвать дорогами), ходовая часть всех
+				автомобилей без исключения постоянно подвергается износу.</p>
+				<p class="Op" style="text-indent: 25px;"> Безопасная маневренность, максимальная устойчивость на дороге и своевременный контроль - это те составляющие, без которых 
+				автомобилю не обойтись. Автосервис "TriOl" предлагает всем желающим автомобилистам провести комплексную проверку состояния ходовой автомобилей, а в случае 
+				необходимости - провести ремонт ходовой как можно быстрее. Мы заинтересованы в том, чтобы Ваш автомобиль всегда был в исправном состоянии. Во время осмотра 
+				проводится полная диагностика автомобилей, в ходе которой составляется общая картина состояния ходовой автомобиля. Проверять состояние ходовой нужно в районе 
+				от 10 000 до 30 000 километров пробега. Подобный разброс зависит от качества дороги, которое, увы, сокращает пробег. Поэтому проверить ходовую недорого - это 
+				приоритет каждого автомобилиста, ведь неисправность одного узла может спровоцировать "цепную реакцию", когда все узлы начинают один за другим выходить из строя.</p>
+				<p class="Op" style="text-indent: 25px;"> Важно также учитывать тот факт, что ремонт ходовой может понадобиться и автомобилям, которые не имеют пробега больше 
+				10 000 километров. Самые верные признаки поломки - посторонние стуки во время движения на неровном дорожном полотне. Еще один признак - люфт рулевого колеса, 
+				что может привести к почти незаметной потере точности управления. В этом случае отремонтировать ходовую недорого помогут наши специалисты из сервисного центра 
+				"TriOl". При проявлении неустойчивости на большой скорости, потере управления, появлении люфта рулевого колеса и неизвестных Вам звуков, мы крайне не рекомендуем 
+				Вам использовать автомобиль, а как можно быстрее доставить его к нам.</p><br>
+				<p class="Op" style="text-indent: 25px;">Вы всегда можете связаться с нами по телефонам, чтобы уточнить стоимость ремонта Вашего автомобиля.
+				Специалисты СТО "TriOl" акцентируют внимание на предоставлении высококачественных и своевременных услуг, направленных на поддержание работоспособного состояния 
+				Вашего авто на протяжении длительного периода времени!</p>
+			</div>
+			<div style="clear:both; padding-top: 15pt; margin-right:15pt;">
+				<div style="float: left; width: 300px;">
+					<a href="../Works.html" class="button" tabindex="0" align="rignt" style="padding-right: 10px; margin-right:15pt;">Назад</a>
+				</div>
+				<div style="float: right;">
+					<a href="#win3" class="button" tabindex="0" align="rignt">Заказать работу</a>
+				</div>
+			</div>
+		</div>
+		
+		<div style="height: 93px; color: #d0cecf;  padding:5pt; padding-top: 0pt; clear: both;">
+			<div style="width: 47%; float:left; font-size:12 pt;">
+				<ul style="position: relative; left:35px; top: 3px;">
+					<li type="none">Контакты
+						<ul>
+							<li>+38(067)566-41-36</li>
+							<li>+38(067)566-42-65</li>
+							<li>+38(056)721-05-34</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div style="float: left;">
+				<p style="font-size:10pt; position: relative; top:80px;">©Тригуб Евгений</p>
+			</div>
+			<div style="position: relative; top: -3px; float: right;  width:250px; text-align: center; padding-top: 18pt;">
+				<ul type="none" class="Op" style="text-align:center; font-size:13pt;">
+					<li>Украина</li>
+					<li>г. Днепропетровск</li>
+					<li>ул. Балхашская, 35</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>CTO "TriOl"</title>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	  <link rel="stylesheet" media="all" type="text/css" href="style.css">
+	  <link rel="shortcut icon" href="ikonka.png" type="image/png">
+  </head>
+  <body>
+	<div style="margin:auto; padding-bottom:5pt;">
+		<div id="LogoB">
+				
+			<!--Всплывающее окно для заявок (запчасти)-->
+			<a href="#x" class="overlay" id="win2"></a>
+			<div class="popup1">
+				<form action="order.php" method="get">
+					<h2 style="margin-bottom: 15px; text-align: center;">Заявка на запчасти</h2>
+					<div style="float: left; width: 250px;">					
+						<h2 style="margin-bottom: 15px;">Автомобиль</h2>
+						<p class="Op_popup">Марка:</p>
+						<input type="text" class="search" name="MachineBrand" style="height:22px;" onKeyPress="ControlT()"/>
+						<p class="Op_popup">Модель:</p>
+						<input type="text" class="search" name="СarModel" style="height:22px;" onKeyPress="ControlT()"/>
+					</div>
+					<div style="float: left; width: 250px; position: relative; top: 8px;">
+						<p class="Op_popup" style="margin-top: 40px;">Запчасти:</p>
+						<textarea style="height:65px;" name="comment" cols="35" class="search" rows="10"></textarea>
+					</div>
+					<div style="float: left; width: 250px;">
+						<h2 style="margin-bottom: 15px;">Контактные данные</h2>
+						<p class="Op_popup">Фамилия:</p>
+						<input type="text" class="search" name="FamilyNameO" style="height:22px;" onKeyPress="ControlT()"/>
+						<p class="Op_popup">Имя:</p>
+						<input type="text" class="search" name="nameO" style="height:22px;" onKeyPress="ControlT()"/>
+						<p class="Op_popup">Номер телефона:</p>
+						<input type="text" class="search" name="PhoneNumber" style="height:22px;" onKeyPress="ControlT()"/>
+						<p class="Op_popup">Email:</p>
+						<input type="email" class="search" name="emailO" style="height:22px;" onKeyPress="ControlT()"/>
+					</div>
+					<div style="float: right; position: relative; top: 15px; padding-right:18px;">
+						<input type="submit" class="button" value="Отправить заявку" style="margin-bottom: 15px; position: relative; left: -21px;">
+					</div>
+					<a class="close" title="Закрыть" href="#close"></a>
+				</form>
+			</div>
+			
+			<!--Всплывающее окно для заявок (ремонт)-->
+			<a href="#x" class="overlay" id="win3"></a>
+			<div class="popup1">
+				<form action="order.php" method="get">
+					<h2 style="margin-bottom: 15px; text-align: center;">Заявка на ремонт</h2>
+					<div style="float: left; width: 250px;">					
+						<h2 style="margin-bottom: 15px;">Автомобиль</h2>
+						<p class="Op_popup">Марка:</p>
+						<input type="text" class="search" name="MachineBrand" style="height:22px;" onKeyPress="ControlT()"/>
+						<p class="Op_popup">Модель:</p>
+						<input type="text" class="search" name="СarModel" style="height:22px;" onKeyPress="ControlT()"/>
+					</div>
+					<div style="float: left; width: 250px; position: relative; top: 8px;">
+						<p class="Op_popup" style="margin-top: 40px;">Проблема:</p>
+						<textarea style="height:65px;" name="comment" cols="35" class="search" rows="10"></textarea>
+					</div>
+					<div style="float: left; width: 250px;">
+						<h2 style="margin-bottom: 15px;">Контактные данные</h2>
+						<p class="Op_popup">Фамилия:</p>
+						<input type="text" class="search" name="FamilyNameO" style="height:22px;" onKeyPress="ControlT()"/>
+						<p class="Op_popup">Имя:</p>
+						<input type="text" class="search" name="nameO" style="height:22px;" onKeyPress="ControlT()"/>
+						<p class="Op_popup">Номер телефона:</p>
+						<input type="text" class="search" name="PhoneNumber" style="height:22px;" onKeyPress="ControlT()"/>
+						<p class="Op_popup">Email:</p>
+						<input type="email" class="search" name="emailO" style="height:22px;" onKeyPress="ControlT()"/>
+					</div>
+					<div style="float: right; position: relative; top: 15px; padding-right:18px;">
+						<input type="submit" class="button" value="Отправить заявку" style="margin-bottom: 15px; position: relative; left: -21px;">
+					</div>
+				</form>
+				<a class="close" title="Закрыть" href="#close"></a>
+			</div>
+		</div>
+		
+		<!--Меню-->
+		<div id="idMenu">
+				<ul id="menu">
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="Works.html">Услуги</a></li>
+					<li><a href="remont_forsunok_delphi_Renault.html">Ремонт форсунок Delphi</a></li>
+					<li><a href="NParts.html">Запчасти</a></li>
+					<li><a href="#" style="cursor: default;">Подать заявку</a>
+						<ul>
+							<li><a href="#win2">Запчасти</a></li>
+							<li><a href="#win3">Ремонт</a></li>
+						</ul>
+					</li>
+					<li><a href="Contacts.html">Контакты</a></li>
+					<li style="width: 14.28%"><a href="Map.html">Карта сайта</a></li>
+				</ul>
+		</div><br>
+		
+		<div style="padding: 10px; margin:15pt; clear:both;">
+			<h1 style="text-align: center; font-size: 18pt;" class="Op">Ремонт форсунок Delphi</h1>
+			<div style="padding: 10px; margin:15pt; float: right;">
+				<img src="injectors common rail delphi renault.jpg" align="right" style="padding-left: 10px; margin-left:15pt; padding-bottom: 10px;" >
+				<h3 style="text-align: center; font-size: 16pt;" class="Op">Диагностика и ремонт форсунок Common Rail Delphi</h3><br>
+				<p class="Op" style="text-indent: 25px;">В компании TriOl работают специалисты с большим опытом ремонта дизельных форсунок. Они избавят вас 
+				от необходимости приобретать новую систему. 
+				В нашем распоряжении большое количество оригинальных запчастей и надежное диагностическое оборудование. Мы создали отличные условия для обслуживания клиентов, 
+				ремонта и замены запчастей. У нас вы платите только за работу специалистов и необходимые детали для замены. Это обойдется вам намного дешевле, чем покупка 
+				новых деталей.</p><br>				
+				<p class="Op" style="text-indent: 25px;">Довольно эффективным и оправданным является ремонт форсунок Common Rail Delphi. Конструкторы 
+				позаботились о том, чтобы система выдерживала значительные нагрузки. Именно поэтому она редко полностью выходит из строя. Чаще всего для 
+				возобновления работы требуется провести очистку от грязи, настройку, замену нескольких деталей. Стоимость таких работ полностью оправдана, 
+				так как покупка новой топливной системы обойдется значительно дороже.
+				Позаботьтесь о своей безопасности на дороге. Сделайте выбор в пользу надежности. Обращайтесь в компанию TriOl и будьте уверены в своем 
+				автомобиле.</p><br>				
+				<p class="Op" style="text-indent: 25px;">Технологически ремонт форсунок Common Rail Delphi заключается в восстановлении производительности 
+				форсунки на различных режимах работы дизельного двигателя и соответствие заданным параметрам после ремонта, в гарантийный и послегарантийный 
+				период, обеспечивая дизельный двигатель точной и дозированной подачей топлива под высоким давлением, уменьшая его расход.</p><br>	
+				<img src="injectors common rail renault.jpg" align="left" style="padding-right: 10px; margin-right:15pt; padding-bottom: 10px;" >
+				<p class="Op" style="text-indent: 25px;">Форсунки Common Rail – это аккумуляторная система, принадлежащая к числу высокоразвитых систем 
+				впрыска. Ее главное преимущество состоит в том, что она обладает широким диапазоном изменения топливного давления, а также момента начала 
+				впрыска дизельного топлива. Данные особенности реализуются за счет разделения процессов обеспечения впрыска и создания давления. Common 
+				Rail в отличие от систем с механическим приводом обеспечивает более лояльные требования к впрыску дизельного топлива:</p><br>
+				<ul class="Op"  style="position: relative; left: 25px;">
+					<li>большее давление впрыска;</li>
+					<li>широкие границы использования;</li>
+					<li>варьируемый момент начала впрыска;</li>
+					<li>регулирование давления впрыска исходя из условий эксплуатации транспорта;</li>
+					<li>возможность дополнительного (даже очень позднего) и предварительного впрыска.</li>
+				</ul><br>
+				<p class="Op" style="text-indent: 25px;">Топливные системы, оснащенные форсунками Common Rail, имеют в своем составе электронный блок 
+				управления. Это значительно упрощает его эксплуатацию, но приводит к сложностям при устранении поломок. Именно поэтому ремонт форсунок 
+				Common Rail стоит доверить профессионалам.</p><br>
+				<p class="Op" style="text-indent: 25px;">Специалисты TriOl работают на высокоточном оборудовании. Это позволяет производить полноценный 
+				ремонт. Для этого осуществляется диагностика аппаратуры, в ходе которой обнаруживаются причины поломки. Мастера получают необходимую 
+				информацию и приступают к устранению неисправностей и ремонту форсунок Common Rail.</p>
+				<p class="Op" style="text-indent: 25px;">Предварительная диагностика форсунок Common Rail 
+				необходима. Эта система имеет сложную конструкцию, поэтому предугадать возможные неисправности – задача не из легких. Система впрыска 
+				Common Rail состоит из форсунок, которые управляются электрическим импульсом. Благодаря этому впрыскивание происходит максимально точно. 
+				Это позволяет экономить на потреблении бензина, уменьшать количество вредных выбросов в атмосферу.</p><br>
+				<p class="Op" style="text-indent: 25px;">Специалисты нашего СТО проведут точную диагностику форсунок Common Rail и высококачественный 
+				ремнот форсунок Delphi с гарантией.</p>
+				<p class="Op" style="text-indent: 25px;">Вы всегда можете связаться с нами по телефонам, чтобы уточнить стоимость ремонта Вашего автомобиля.
+				Специалисты СТО "TriOl" акцентируют внимание на предоставлении высококачественных и своевременных услуг, направленных на поддержание 
+				работоспособного состояния Вашего авто на протяжении длительного периода времени!</p>
+			</div>
+			<div style="clear:both; padding-top: 5pt; margin-right:18pt;">
+				<div style="float: right;">
+					<a href="#win3" class="button" tabindex="0" align="rignt">Заказать работу</a>
+				</div>
+			</div>
+		</div>
+		
+		<div style="height: 93px; color: #d0cecf;  padding:5pt; padding-top: 0pt; clear: both;">
+			<div style="width: 47%; float:left; font-size:12 pt;">
+				<ul style="position: relative; left:35px; top: 3px;">
+					<li type="none">Контакты
+						<ul>
+							<li>+38(067)566-41-36</li>
+							<li>+38(067)566-42-65</li>
+							<li>+38(056)721-05-34</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div style="float: left;">
+				<p style="font-size:10pt; position: relative; top:80px;">©Тригуб Евгений</p>
+			</div>
+			<div style="position: relative; top: -3px; float: right;  width:250px; text-align: center; padding-top: 18pt;">
+				<ul type="none" class="Op" style="text-align:center; font-size:13pt;">
+					<li>Украина</li>
+					<li>г. Днепропетровск</li>
+					<li>ул. Балхашская, 35</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

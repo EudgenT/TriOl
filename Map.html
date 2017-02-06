@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+	  <title>CTO "TriOl"</title>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	  <link rel="stylesheet" media="all" type="text/css" href="style.css">
+	  <link rel="shortcut icon" href="ikonka.png" type="image/png">
+  </head>
+  <body>
+	<div style="margin:auto; padding-bottom:5pt;">
+		<div id="LogoB">
+				
+			<!--Всплывающее окно для заявок (запчасти)-->
+			<a href="#x" class="overlay" id="win2"></a>
+			<div class="popup1">
+				<form action="order.php" method="get">
+					<h2 style="margin-bottom: 15px; text-align: center;">Заявка на запчасти</h2>
+					<div style="float: left; width: 250px;">					
+						<h2 style="margin-bottom: 15px;">Автомобиль</h2>
+						<p class="Op_popup">Марка:</p>
+						<input type="text" class="search" name="MachineBrand" style="height:22px;" onKeyPress="ControlT()"/>
+						<p class="Op_popup">Модель:</p>
+						<input type="text" class="search" name="СarModel" style="height:22px;" onKeyPress="ControlT()"/>
+					</div>
+					<div style="float: left; width: 250px; position: relative; top: 8px;">
+						<p class="Op_popup" style="margin-top: 40px;">Запчасти:</p>
+						<textarea style="height:65px;" name="comment" cols="35" class="search" rows="10"></textarea>
+					</div>
+					<div style="float: left; width: 250px;">
+						<h2 style="margin-bottom: 15px;">Контактные данные</h2>
+						<p class="Op_popup">Фамилия:</p>
+						<input type="text" class="search" name="FamilyNameO" style="height:22px;" onKeyPress="ControlT()"/>
+						<p class="Op_popup">Имя:</p>
+						<input type="text" class="search" name="nameO" style="height:22px;" onKeyPress="ControlT()"/>
+						<p class="Op_popup">Номер телефона:</p>
+						<input type="text" class="search" name="PhoneNumber" style="height:22px;" onKeyPress="ControlT()"/>
+						<p class="Op_popup">Email:</p>
+						<input type="email" class="search" name="emailO" style="height:22px;" onKeyPress="ControlT()"/>
+					</div>
+					<div style="float: right; position: relative; top: 15px; padding-right:18px;">
+						<input type="submit" class="button" value="Отправить заявку" style="margin-bottom: 15px; position: relative; left: -21px;">
+					</div>
+					<a class="close" title="Закрыть" href="#close"></a>
+				</form>
+			</div>
+			
+			<!--Всплывающее окно для заявок (ремонт)-->
+			<a href="#x" class="overlay" id="win3"></a>
+			<div class="popup1">
+				<form action="order.php" method="get">
+					<h2 style="margin-bottom: 15px; text-align: center;">Заявка на ремонт</h2>
+					<div style="float: left; width: 250px;">					
+						<h2 style="margin-bottom: 15px;">Автомобиль</h2>
+						<p class="Op_popup">Марка:</p>
+						<input type="text" class="search" name="MachineBrand" style="height:22px;" onKeyPress="ControlT()"/>
+						<p class="Op_popup">Модель:</p>
+						<input type="text" class="search" name="СarModel" style="height:22px;" onKeyPress="ControlT()"/>
+					</div>
+					<div style="float: left; width: 250px; position: relative; top: 8px;">
+						<p class="Op_popup" style="margin-top: 40px;">Проблема:</p>
+						<textarea style="height:65px;" name="comment" cols="35" class="search" rows="10"></textarea>
+					</div>
+					<div style="float: left; width: 250px;">
+						<h2 style="margin-bottom: 15px;">Контактные данные</h2>
+						<p class="Op_popup">Фамилия:</p>
+						<input type="text" class="search" name="FamilyNameO" style="height:22px;" onKeyPress="ControlT()"/>
+						<p class="Op_popup">Имя:</p>
+						<input type="text" class="search" name="nameO" style="height:22px;" onKeyPress="ControlT()"/>
+						<p class="Op_popup">Номер телефона:</p>
+						<input type="text" class="search" name="PhoneNumber" style="height:22px;" onKeyPress="ControlT()"/>
+						<p class="Op_popup">Email:</p>
+						<input type="email" class="search" name="emailO" style="height:22px;" onKeyPress="ControlT()"/>
+					</div>
+					<div style="float: right; position: relative; top: 15px; padding-right:18px;">
+						<input type="submit" class="button" value="Отправить заявку" style="margin-bottom: 15px; position: relative; left: -21px;">
+					</div>
+				</form>
+				<a class="close" title="Закрыть" href="#close"></a>
+			</div>
+		</div>
+		
+		<!--Меню-->
+		<div id="idMenu">
+				<ul id="menu">
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="Works.html">Услуги</a></li>
+					<li><a href="remont_forsunok_delphi_Renault.html">Ремонт форсунок Delphi</a></li>
+					<li><a href="NParts.html">Запчасти</a></li>
+					<li><a href="#" style="cursor: default;">Подать заявку</a>
+						<ul>
+							<li><a href="#win2">Запчасти</a></li>
+							<li><a href="#win3">Ремонт</a></li>
+						</ul>
+					</li>
+					<li><a href="Contacts.html">Контакты</a></li>
+					<li style="width: 14.28%"><a href="Map.html">Карта сайта</a></li>
+				</ul>
+		</div>
+			
+		<div style="padding: 10px; margin:15pt; clear:both;">
+			<h2 class="Op" style="text-align: center;">Карта сайта</h2><br>
+			<div style="clear: both; border-bottom: 1px solid #fff;">
+				<h3 class="Op" style="text-align: center;">Основные разделы</h3><br>
+				<ul class="Op" type="none">
+					<li><a href ="index.html">1. Главная</a></li>
+					<li><a href ="Works.html">2. Услуги</a></li>
+					<li><a href ="remont_forsunok_delphi_Renault.html">3. Ремонт форсунок Delphi</a></li>
+					<li><a href ="NParts.html">4. Запчасти</a></li>
+					<li><a href ="#">5. Подать заявку</a>
+						<ul style="position: relative; left: 25px;" type="none">
+							<li><a href="#win2">5.1 Запчасти</a></li>
+							<li><a href="#win3">5.2 Ремонт</a></li>
+						</ul>
+					</li>
+					<li><a href ="Contacts.html">6. Контакты</a></li>
+					<li><a href ="Map.html">7. Карта сайта</a></li>
+					<li><a href ="info.html">8. Инструкция пользователя</a></li>
+				</ul><br>
+			</div>
+			<div style="clear: both; border-bottom: 1px solid #fff;">
+			<br>
+				<h3 class="Op" style="text-align: center;">Услуги и работы</h3><br>
+				<div>
+					<ul class="Op" type="none" style="position: relative; left: 25px;">
+						<li><br><a href ="PagesW/repair of chassis.html">Ремонт ходовой</a></li>
+						<li><br><a href ="PagesW/Brake system repairs.html">Ремонт тормозной системы</a></li>
+						<li><br><a href ="PagesW/Changing the belts, rollers.html">Замена ремней, роликов</a></li>
+						<li><br><a href ="PagesW/injector cleaning.html">Чистка инжектора</a></li>
+						<li><br><a href ="PagesW/Diagnosis and cleaning nozzles.html">Ремонт форсунок</a></li>
+						<li><br><a href ="PagesW/engine overhaul.html">Капитальный ремонт двигателя</a></li>
+						<li><br><a href ="PagesW/Cooling system repairs.html">Ремонт системы охлаждения</a></li>
+						<li><br><a href ="PagesW/Repair of the heating system.html">Ремонт системы отопления</a></li>
+						<li><br><a href ="PagesW/Replacement of racks reno.html">Замена стоек</a></li>
+						<li><br><a href ="PagesW/Computer diagnostics.html">Компьютерная диагностика</a></li>
+						<li><br><a href ="PagesW/Gearbox repair.html">Ремонт КПП</a></li>
+						<li><br><a href ="PagesW/Repair of steering racks.html">Ремонт рулевых реек</a></li>
+						<li><br><a href ="NParts.html">Запчасти</a></li><BR>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="foot" style="clear: both;">
+			<div style="width: 47%; float:left; font-size:12 pt;">
+				<ul style="position: relative; left:35px; top: 3px;" type="none">
+					<li>Контакты
+						<ul>
+							<li>+38(067)566-41-36</li>
+							<li>+38(067)566-42-65</li>
+							<li>+38(056)721-05-34</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div style="float: left;">
+				<p style="font-size:10pt; position: relative; top:80px;">©Тригуб Евгений</p>
+			</div>
+			<div class="footer_inf">
+				<ul type="none" class="Op" style="text-align:center; font-size:13pt;">
+					<li>Украина</li>
+					<li>г. Днепропетровск</li>
+					<li>ул. Балхашская, 35</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

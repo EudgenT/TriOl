@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+	  <title>CTO "TriOl"</title>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	  <link rel="stylesheet" media="all" type="text/css" href="style.css">
+	  <link rel="shortcut icon" href="ikonka.png" type="image/png">
+  </head>
+  <body>
+	<div style="margin:auto; padding-bottom:5pt;">
+		<div id="LogoB">
+				
+			<!--Всплывающее окно для заявок (запчасти)-->
+			<a href="#x" class="overlay" id="win2"></a>
+			<div class="popup1">
+				<form action="order.php" method="get">
+					<h2 style="margin-bottom: 15px; text-align: center;">Заявка на запчасти</h2>
+					<div style="float: left; width: 250px;">					
+						<h2 style="margin-bottom: 15px;">Автомобиль</h2>
+						<p class="Op_popup">Марка:</p>
+						<input type="text" class="search" name="MachineBrand" style="height:22px;" onKeyPress="ControlT()"/>
+						<p class="Op_popup">Модель:</p>
+						<input type="text" class="search" name="СarModel" style="height:22px;" onKeyPress="ControlT()"/>
+					</div>
+					<div style="float: left; width: 250px; position: relative; top: 8px;">
+						<p class="Op_popup" style="margin-top: 40px;">Запчасти:</p>
+						<textarea style="height:65px;" name="comment" cols="35" class="search" rows="10"></textarea>
+					</div>
+					<div style="float: left; width: 250px;">
+						<h2 style="margin-bottom: 15px;">Контактные данные</h2>
+						<p class="Op_popup">Фамилия:</p>
+						<input type="text" class="search" name="FamilyNameO" style="height:22px;" onKeyPress="ControlT()"/>
+						<p class="Op_popup">Имя:</p>
+						<input type="text" class="search" name="nameO" style="height:22px;" onKeyPress="ControlT()"/>
+						<p class="Op_popup">Номер телефона:</p>
+						<input type="text" class="search" name="PhoneNumber" style="height:22px;" onKeyPress="ControlT()"/>
+						<p class="Op_popup">Email:</p>
+						<input type="email" class="search" name="emailO" style="height:22px;" onKeyPress="ControlT()"/>
+					</div>
+					<div style="float: right; position: relative; top: 15px; padding-right:18px;">
+						<input type="submit" class="button" value="Отправить заявку" style="margin-bottom: 15px; position: relative; left: -21px;">
+					</div>
+					<a class="close" title="Закрыть" href="#close"></a>
+				</form>
+			</div>
+			
+			<!--Всплывающее окно для заявок (ремонт)-->
+			<a href="#x" class="overlay" id="win3"></a>
+			<div class="popup1">
+				<form action="order.php" method="get">
+					<h2 style="margin-bottom: 15px; text-align: center;">Заявка на ремонт</h2>
+					<div style="float: left; width: 250px;">					
+						<h2 style="margin-bottom: 15px;">Автомобиль</h2>
+						<p class="Op_popup">Марка:</p>
+						<input type="text" class="search" name="MachineBrand" style="height:22px;" onKeyPress="ControlT()"/>
+						<p class="Op_popup">Модель:</p>
+						<input type="text" class="search" name="СarModel" style="height:22px;" onKeyPress="ControlT()"/>
+					</div>
+					<div style="float: left; width: 250px; position: relative; top: 8px;">
+						<p class="Op_popup" style="margin-top: 40px;">Проблема:</p>
+						<textarea style="height:65px;" name="comment" cols="35" class="search" rows="10"></textarea>
+					</div>
+					<div style="float: left; width: 250px;">
+						<h2 style="margin-bottom: 15px;">Контактные данные</h2>
+						<p class="Op_popup">Фамилия:</p>
+						<input type="text" class="search" name="FamilyNameO" style="height:22px;" onKeyPress="ControlT()"/>
+						<p class="Op_popup">Имя:</p>
+						<input type="text" class="search" name="nameO" style="height:22px;" onKeyPress="ControlT()"/>
+						<p class="Op_popup">Номер телефона:</p>
+						<input type="text" class="search" name="PhoneNumber" style="height:22px;" onKeyPress="ControlT()"/>
+						<p class="Op_popup">Email:</p>
+						<input type="email" class="search" name="emailO" style="height:22px;" onKeyPress="ControlT()"/>
+					</div>
+					<div style="float: right; position: relative; top: 15px; padding-right:18px;">
+						<input type="submit" class="button" value="Отправить заявку" style="margin-bottom: 15px; position: relative; left: -21px;">
+					</div>
+				</form>
+				<a class="close" title="Закрыть" href="#close"></a>
+			</div>
+		</div>
+		
+		<!--Меню-->
+		<div id="idMenu">
+				<ul id="menu">
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="Works.html">Услуги</a></li>
+					<li><a href="remont_forsunok_delphi_Renault.html">Ремонт форсунок Delphi</a></li>
+					<li><a href="NParts.html">Запчасти</a></li>
+					<li><a href="#" style="cursor: default;">Подать заявку</a>
+						<ul>
+							<li><a href="#win2">Запчасти</a></li>
+							<li><a href="#win3">Ремонт</a></li>
+						</ul>
+					</li>
+					<li><a href="Contacts.html">Контакты</a></li>
+					<li style="width: 14.28%"><a href="Map.html">Карта сайта</a></li>
+				</ul>
+		</div>
+					
+		<h2 class="Op" style="text-align: center; margin-top: 35px;">Запчасти, продаваемые на СТО TriOl</h2><br>
+		<div class="Op" style="padding: 10px; margin:15pt; margin-top: -15px; clear:both;">
+			<table style="width:100%; text-align: center;">
+				<tr style="text-align: center; height: 250px;">
+					<td style="width:33%;">
+						<a href="PagesP/Releaser.html"><img src="Parts/Releaser.jpg" style="margin-left: 94px;"></a>
+						<a href="PagesP/Releaser.html">Выжимной подшипник</a>
+					</td>
+					<td style="width:33%;">
+						<a href="PagesP/The main brake.html"><img src="Parts/The main brake.jpg" style="margin-left: 94px;"></a>
+						<a href="PagesP/The main brake.html">Главный тормоз</a>
+					</td>
+					<td style="width:33%;">
+						<a href="PagesP/timing.html"><img src="Parts/timing.jpg" style="margin-left: 92px;"></a>
+						<a href="PagesP/timing.html">ГРМ</a>
+					</td>
+				</tr>
+				<tr style="height: 250px;">
+					<td width="33%">
+						<a href="PagesP/timing belt kit.html"><img src="Parts/timing belt kit.jpg" style="margin-left: 91px;"></a>
+						<a href="PagesP/timing belt kit.html">ГРМ комплект</a>
+					</td>
+					<td width="33%">
+						<a href="PagesP/Timing gear set.html"><img src="Parts/Timing gear set.jpg" style="margin-left: 89px;">
+						<a href="PagesP/Timing gear set.html">ГРМ комплект + шестерня</a>
+					</td>
+					<td style="width:33%;">
+						<a href="PagesP/sensor fan.html"><img src="Parts/sensor fan.jpg" style="margin-left: 93px;"></a>
+						<a href="PagesP/sensor fan.html">Датчик вентилятора</a>
+					</td>
+				</tr>
+				<tr style="height: 250px;">
+					<td width="33%">
+						<a href="PagesP/sensor gur.html"><img src="Parts/sensor gur.jpg" style="margin-left: 93px;"></a>
+						<a href="PagesP/sensor gur.html">Датчик ГУР</a>
+					</td>
+					<td width="33%">
+						<a href="PagesP/crankshaft sensor.html"><img src="Parts/crankshaft sensor.jpg" style="margin-left: 93px;"></a>
+						<a href="PagesP/crankshaft sensor.html">Датчик коленвала</a>
+					</td>
+					<td>
+						<a href="PagesP/speed Sensor.html"><img src="Parts/speed Sensor.png" style="margin-left: 93px;"></a>
+						<a href="PagesP/speed Sensor.html">Датчик скорости</a>
+					</td>
+				</tr>
+				<tr style="height: 250px;">
+					<td style="width:33%; text-align: center;">
+						<a href="PagesP/Sensor idling.html"><img src="Parts/Sensor idling.jpg" style="margin-left: 93px;"></a>
+						<a href="PagesP/Sensor idling.html">Датчик холостого хода</a>
+					</td>
+					<td style="width:33%">
+						<a href="PagesP/clutch disc.html"><img src="Parts/clutch disc.jpg" style="margin-left: 93px;"></a>
+						<a href="PagesP/clutch disc.html">Диск сцепления</a>
+					</td>
+					<td>
+						<a href="PagesP/trunk lock.html"><img src="Parts/trunk lock.jpg" style="margin-left: 93px;"></a>
+						<a href="PagesP/trunk lock.html">Замок багажника</a>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:33%; text-align: center;" colspan="3">
+						<a href="NParts.html">1</a>
+						<a href="NParts_2.html">2</a>
+						<a href="NParts_3.html">3</a>
+						<a href="NParts_4.html">4</a>
+						<a href="NParts_5.html">5</a>
+						<a href="NParts_6.html">6</a>
+						<a href="NParts_7.html">7</a>
+						<a href="NParts_8.html">8</a>
+						<a href="NParts_9.html">9</a>
+						<a href="NParts_10.html">10</a>
+						<a href="NParts_11.html">11</a>
+						<a href="NParts_12.html">12</a>
+						<a href="NParts_13.html">13</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div class="foot">
+			<div style="width: 47%; float:left; font-size:12 pt;">
+				<ul style="position: relative; left:35px; top: 3px;" type="none">
+					<li>Контакты
+						<ul>
+							<li>+38(067)566-41-36</li>
+							<li>+38(067)566-42-65</li>
+							<li>+38(056)721-05-34</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div style="float: left;">
+				<p style="font-size:10pt; position: relative; top:80px;">©Тригуб Евгений</p>
+			</div>
+			<div class="footer_inf">
+				<ul type="none" class="Op" style="text-align:center; font-size:13pt;">
+					<li>Украина</li>
+					<li>г. Днепропетровск</li>
+					<li>ул. Балхашская, 35</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>
